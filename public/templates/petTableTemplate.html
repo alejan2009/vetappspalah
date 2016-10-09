@@ -1,0 +1,9 @@
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+	<tr ng-repeat="pet in pets">
+		<td ng-if="!switchFilter"><a href="#/pet/full/{{pet.id}}">{{pet.name}}</a></td>
+		<td ng-if="switchFilter"><a href="#/pet/filter/{{pet.id}}">{{pet.name}}</a></td>
+	</tr>
+</table>

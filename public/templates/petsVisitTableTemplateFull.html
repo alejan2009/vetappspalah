@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Owner ID</th>
+		<th>Pet ID</th>
+		<th>Doctor ID</th>
+	</tr>
+	<tr ng-repeat="visit in visits">
+		<td>{{visit.visitedAt}}</td>
+		<td>{{visit.ownerId}}</td>
+		<td>{{visit.petId}}</td>
+		<td>{{visit.doctorId}}</td>
+	</tr>
+</table>

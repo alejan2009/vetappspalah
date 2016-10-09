@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vetApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Vet clinic</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-controller="MainCtrl">
+	<h1>Vet clinic</h1>
+	<input type="checkbox" id="checkbox" ng-change="checkedFilter()" ng-model="checkboxModel.switchToFilter">
+	<label for="checkbox">Switch to filter</label>
+	<h2><a href="#/">All table</a></h2>
+	<ul>
+		<li>
+			<h2><a href="#/doctors/full">Doctor table</a></h2>
+		</li>
+		<li>
+			<h2><a href="#/pets/full">Pet table</a></h2>
+		</li>
+		<li>
+			<h2><a href="#/owners/full">Owner table</a></h2>
+		</li>
+		<li>
+			<h2><a href="#/visits/full">Visit table</a></h2>
+		</li>
+	</ul>
+	<div class="my-slide-container">
+		<div ng-view class="my-slide-animation"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-resource.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+	<script src="https://code.angularjs.org/1.5.8/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

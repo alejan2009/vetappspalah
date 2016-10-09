@@ -1,0 +1,9 @@
+<table>
+	<tr>
+		<th>Name</th>
+	</tr>
+	<tr ng-repeat="doctor in doctors">
+		<td ng-if="!switchFilter"><a href="#/doctor/full/{{doctor.id}}">{{doctor.name}}</a></td>
+		<td ng-if="switchFilter"><a href="#/doctor/filter/{{doctor.id}}">{{doctor.name}}</a></td>
+	</tr>
+</table>
